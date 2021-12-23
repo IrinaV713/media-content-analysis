@@ -19,7 +19,7 @@ const toTable =  (data, ...fields) => {
 (async () => {
     const accountsList = await models.Account.findAll();
     console.log(chalk.green(`Accounts list`));
-    console.log(toTable(accountsList, "role", "email", "login", "password", "state"));
+    console.log(toTable(accountsList, "role", "email", "login", "password", "state",  "avatar"));
 
     const accessList = await models.Access.findAll({
         include: [{
