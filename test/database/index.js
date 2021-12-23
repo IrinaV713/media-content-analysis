@@ -1,4 +1,4 @@
-const dbConnection = require('../../src/js/connect');
+const dbConnection = require('../../src/js/connection');
 const chalk = require('chalk');
 
 (async () => {
